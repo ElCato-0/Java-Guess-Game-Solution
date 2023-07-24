@@ -25,11 +25,8 @@ public class Result {
     @Override
     public boolean equals(Object other) {
         if (other instanceof Result) {
-            // first cast the other object to a Result object
-            // then compare the name
             return name.equals(((Result) other).name);
         } else if (other instanceof String) {
-            // compare the name with the other object
             return name.equals(other);
         }
         return false;
